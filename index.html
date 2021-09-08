@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando JavaScript</title>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint, similique repudiandae au.</p>
+    <script>
+
+        /*alert('olá mundo')
+        confirm('Tem café?')*/
+        var nome = prompt('Qual é o seu nome?')
+        alert('É um prazer te conhecer, ' + nome)
+
+        var idade =  Number(prompt('Qual é sua idade?'))
+        var anonascimento = Number(prompt('Digite o ano do seu nasicmento'))
+        var soma  = idade + anonascimento
+        alert(`A soma entre ${idade} e ${anonascimento} é ${soma}`)
+
+        var letras = prompt('Digite as vogais: ')
+        document.write(`Você digitou ${letras.length}  letras. `)
+        document.write(`Seu nome em maiusculo ${nome.toUpperCase()} `)
+
+        var salario = Number(prompt('Informe sua pretensão salarial: '))
+        document.write(`Sua proposta salarial é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} `) //recepcionou em number e imprimiu string. 
+
+
+
+
+        
+        
+    </script> 
+</body>
+</html>
+
