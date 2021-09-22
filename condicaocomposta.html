@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição Composta</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Informe seu país: <input type="text" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var p = document.querySelector('input#pais')
+            var r = document.querySelector('div#res')
+
+            if (p == 'brasil') {
+                
+                r.innerHTML += `<p>Você é <strong>brasileiro</strong>.</p>`
+            }else{
+                r.innerHTML +=  `<p>Você é <strong>estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+
+
+</body>
+</html>
